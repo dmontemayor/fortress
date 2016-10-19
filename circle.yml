@@ -4,6 +4,7 @@ machine:
     version: 3.4.3
 
 test:
-  pre:
-    - py.test
+  override:
+    - mkdir -p $CIRCLE_TESTS_REPORTS/pytest
+    - py.test --junitxml=$CIRCLE_TESTS_REPORTS/pytest
 
