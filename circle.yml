@@ -4,4 +4,4 @@ machine:
     version: 3.4.3
 
 #test:
-#  pytest
+  - pytest
